@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="payment.css">
+         <script type="text/javascript">
+        function body(){
+            var name ="KINDLY ensure you have paid your money to treasurer because treasurer will have to go through the list before processing annual report. To continue press OK";
+
+            alert(name);
+        }
+    </script>
+    </head>
+    <body onload="body()">
+        <div class="center">
+            <h1>Make Payment</h1>
+            <form action="payment.php" method="post">
+            <div class="txt_field">
+                <input type="text" name="firstName" id="" required>
+                <span></span>
+                <label>First Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="lastName" id="" required>
+                <span></span>
+                <label>Last Name</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="date" name="date" id="" required>
+                <span></span>
+                <label>Choice date</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="payment" id="" required>
+                <span></span>
+                <label>Payment for</label>
+            </div>
+            
+         <div class="txt_field">
+                <input type="text" name="amount" id="" required>
+                <span></span>
+                <label>Amount</label>
+            </div>
+            <input type="submit"name="submit"value ="Pay">
+    </form>
+    </body>
+</html>
